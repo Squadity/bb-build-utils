@@ -2,11 +2,11 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.bolbat</groupId>
 	<artifactId>bb-buildutils</artifactId>
-	<version>2-SNAPSHOT</version>
+	<version>1-SNAPSHOT</version>
 	<name>Build utilities</name>
 	<description>Utility for maven building process, like configurations, etc</description>
 	<url>http://confluence.infra.bolbat.net/</url>
-	<inceptionYear>2012</inceptionYear>
+	<inceptionYear>2013</inceptionYear>
 
 	<organization>
 		<name>BB Corp</name>
@@ -63,9 +63,10 @@
 	</distributionManagement>
 
 	<scm>
-		<connection>scm:svn:http://svn.anotheria.net/bolbat/bb-buildutils/trunk</connection>
-		<developerConnection>scm:svn:http://svn.anotheria.net/bolbat/bb-buildutils/trunk</developerConnection>
-		<url>svn:http://svn.anotheria.net/bolbat/bb-buildutils/trunk</url>
-	</scm>
+	    <connection>scm:git:http://stash.infra.bolbat.net/scm/BBBUILDUTILS/main.git</connection>
+	    <developerConnection>scm:git:http://stash.infra.bolbat.net/scm/BBBUILDUTILS/main.git</developerConnection>
+	    <url>http://stash.infra.bolbat.net/scm/BBBUILDUTILS/main.git</url>
+	    <tag>HEAD</tag>
+  	</scm>
 
 </project>
