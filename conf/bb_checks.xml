@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC
+    "-//Puppy Crawl//DTD Check Configuration 1.2//EN"
+    "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
+
+<module name="Checker">
+
+	<module name="JavadocPackage">
+		<property name="severity" value="info" />
+	</module>
+
+	<module name="NewlineAtEndOfFile">
+		<property name="severity" value="info" />
+	</module>
+
+	<module name="Translation" />
+
+	<module name="FileLength" />
+
+	<module name="TreeWalker">
+
+		<module name="JavadocMethod">
+			<property name="allowMissingParamTags" value="true" />
+			<property name="allowMissingThrowsTags" value="true" />
+			<property name="allowMissingReturnTag" value="false" />
+			<property name="allowMissingPropertyJavadoc" value="true" />
+			<property name="severity" value="warning" />
+			<property name="scope" value="protected" />
+		</module>
+
+		<module name="JavadocType" />
+
+		<module name="JavadocVariable" />
+
+		<module name="JavadocStyle">
+			<property name="severity" value="warning" />
+		</module>
+
+		<module name="LocalFinalVariableName" />
+
+		<module name="LocalVariableName" />
+
+		<module name="MemberName" />
+
+		<module name="MethodName" />
+
+		<module name="PackageName" />
+
+		<module name="ParameterName" />
+
+		<module name="StaticVariableName" />
+
+		<module name="TypeName" />
+
+		<module name="AvoidStarImport" />
+
+		<module name="RedundantImport" />
+
+		<module name="MethodLength" />
+
+		<module name="ParameterNumber" />
+
+		<module name="EmptyForIteratorPad" />
+
+		<module name="GenericWhitespace">
+			<property name="severity" value="info" />
+		</module>
+
+		<module name="MethodParamPad">
+			<property name="severity" value="info" />
+		</module>
+
+		<module name="ModifierOrder">
+			<property name="severity" value="info" />
+		</module>
+
+		<module name="RedundantModifier">
+			<property name="severity" value="warning" />
+		</module>
+
+		<module name="AvoidNestedBlocks" />
+
+		<module name="EmptyBlock">
+			<property name="severity" value="warning" />
+		</module>
+
+		<module name="LeftCurly" />
+
+		<module name="RightCurly" />
+
+		<module name="EmptyStatement" />
+
+		<module name="EqualsHashCode" />
+
+		<module name="HiddenField">
+			<property name="ignoreSetter" value="true" />
+			<property name="ignoreConstructorParameter" value="true" />
+		</module>
+
+		<module name="InnerAssignment">
+			<property name="severity" value="warning" />
+		</module>
+
+		<module name="MissingSwitchDefault" />
+
+		<module name="RedundantThrows" />
+
+		<module name="SimplifyBooleanExpression" />
+
+		<module name="SimplifyBooleanReturn" />
+
+		<module name="ArrayTypeStyle">
+			<property name="severity" value="info" />
+		</module>
+
+		<module name="TodoComment">
+			<property name="severity" value="info" />
+			<property name="format" value="TODO|FIXME|todo|XXX" />
+		</module>
+
+		<module name="UpperEll" />
+
+		<module name="FallThrough">
+			<property name="severity" value="error" />
+		</module>
+
+		<module name="SuperClone">
+			<property name="severity" value="error" />
+		</module>
+
+		<module name="SuperFinalize">
+			<property name="severity" value="error" />
+		</module>
+
+		<module name="IllegalInstantiation">
+			<property name="severity" value="warning" />
+			<property name="classes" value="java.lang.Long,java.lang.Integer,java.lang.Float,java.lang.Double,java.lang.Boolean" />
+		</module>
+
+	</module>
+
+	<module name="SuppressionCommentFilter">
+		<property name="offCommentFormat" value="CHECKSTYLE\:\s*OFF\s*" />
+		<property name="onCommentFormat" value="CHECKSTYLE\:\s*ON\s*" />
+	</module>
+
+	<module name="SuppressionCommentFilter">
+		<property name="offCommentFormat" value="CSOFF\:\s*(\S+)\s*" />
+		<property name="onCommentFormat" value="CSON\:\s*(\S+)\s*" />
+		<property name="checkFormat" value="$1" />
+	</module>
+
+</module>

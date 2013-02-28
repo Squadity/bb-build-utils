@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.bolbat</groupId>
+	<artifactId>bb-buildutils</artifactId>
+	<version>2-SNAPSHOT</version>
+	<name>Build utilities</name>
+	<description>Utility for maven building process, like configurations, etc</description>
+	<url>http://confluence.infra.bolbat.net/</url>
+	<inceptionYear>2012</inceptionYear>
+
+	<organization>
+		<name>BB Corp</name>
+		<url>http://bolbat.net/</url>
+	</organization>
+
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>http://www.opensource.org/licenses/mit-license.php</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<issueManagement>
+		<system>JIRA</system>
+		<url>http://jira.infra.bolbat.net</url>
+	</issueManagement>
+
+	<ciManagement>
+		<system>Jenkins</system>
+		<url>http://jenkins.infra.bolbat.net</url>
+	</ciManagement>
+
+	<dependencies>
+	</dependencies>
+
+	<build>
+		<finalName>${artifactId}-${version}</finalName>
+		<resources>
+			<resource>
+				<directory>${project.basedir}/conf</directory>
+				<includes>
+					<include>**/*.xml</include>
+				</includes>
+			</resource>
+		</resources>
+	</build>
+
+	<distributionManagement>
+		<!-- use the following if you're not using a snapshot version. -->
+		<repository>
+			<id>bb-release</id>
+			<name>BB Release Repository</name>
+			<url>http://nexus.infra.bolbat.net/content/repositories/releases</url>
+		</repository>
+		<!-- use the following if you ARE using a snapshot version. -->
+		<snapshotRepository>
+			<id>bb-snapshot</id>
+			<name>BB Snapshot Repository</name>
+			<url>http://nexus.infra.bolbat.net/content/repositories/snapshots</url>
+			<uniqueVersion>true</uniqueVersion>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<scm>
+		<connection>scm:svn:http://svn.anotheria.net/bolbat/bb-buildutils/trunk</connection>
+		<developerConnection>scm:svn:http://svn.anotheria.net/bolbat/bb-buildutils/trunk</developerConnection>
+		<url>svn:http://svn.anotheria.net/bolbat/bb-buildutils/trunk</url>
+	</scm>
+
+</project>
