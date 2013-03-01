@@ -66,7 +66,6 @@
 	    <connection>scm:git:ssh://git@stash.infra.bolbat.net:9074/BBBUILDUTILS/main.git</connection>
 	    <developerConnection>scm:git:ssh://git@stash.infra.bolbat.net:9074/BBBUILDUTILS/main.git</developerConnection>
 	    <url>http://stash.infra.bolbat.net/scm/BBBUILDUTILS/main.git</url>
-	    <tag>master</tag>
   	</scm>
 
 </project>
