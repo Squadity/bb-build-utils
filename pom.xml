@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.bolbat</groupId>
 	<artifactId>bb-buildutils</artifactId>
-	<version>1-SNAPSHOT</version>
+	<version>1</version>
 	<name>Build utilities</name>
 	<description>Utility for maven building process, like configurations, etc</description>
 	<url>http://confluence.infra.bolbat.net/</url>
