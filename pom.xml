@@ -2,8 +2,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.bolbat</groupId>
 	<artifactId>bb-buildutils</artifactId>
-	<version>2-SNAPSHOT</version>
 	<name>Build utilities</name>
+	<version>2-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<description>Utility for maven building process, like configurations, etc</description>
 	<url>http://confluence.infra.bolbat.net/</url>
 	<inceptionYear>2013</inceptionYear>
@@ -31,8 +32,19 @@
 		<url>http://jenkins.infra.bolbat.net</url>
 	</ciManagement>
 
-	<dependencies>
-	</dependencies>
+	<developers>
+		<developer>
+			<id>bb-team</id>
+			<name>BB Team</name>
+			<email>info@bolbat.net</email>
+			<organization>bolbat.net</organization>
+			<organizationUrl>http://bolbat.net</organizationUrl>
+			<url>http://bolbat.net</url>
+			<roles>
+				<role>Everything</role>
+			</roles>
+		</developer>
+	</developers>
 
 	<properties>
 		<!-- general configuration properties -->
@@ -52,6 +64,36 @@
 			</resource>
 		</resources>
 	</build>
+
+	<profiles>
+		<profile>
+			<id>release-sign-artifacts</id>
+			<activation>
+				<property>
+					<name>performRelease</name>
+					<value>true</value>
+				</property>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-gpg-plugin</artifactId>
+						<version>1.4</version>
+						<executions>
+							<execution>
+								<id>sign-artifacts</id>
+								<phase>verify</phase>
+								<goals>
+									<goal>sign</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 
 	<distributionManagement>
 		<!-- use the following if you're not using a snapshot version. -->
