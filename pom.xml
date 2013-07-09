@@ -9,6 +9,12 @@
 	<url>http://confluence.infra.bolbat.net/</url>
 	<inceptionYear>2013</inceptionYear>
 
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
+	</parent>
+
 	<organization>
 		<name>BB Corp</name>
 		<url>http://bolbat.net/</url>
@@ -96,12 +102,6 @@
 	</profiles>
 
 	<distributionManagement>
-		<!-- use the following if you're not using a snapshot version. -->
-		<repository>
-			<id>bb-release</id>
-			<name>BB Release Repository</name>
-			<url>http://nexus.infra.bolbat.net/content/repositories/releases</url>
-		</repository>
 		<!-- use the following if you ARE using a snapshot version. -->
 		<snapshotRepository>
 			<id>bb-snapshot</id>
