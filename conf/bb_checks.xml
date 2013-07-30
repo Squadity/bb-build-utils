@@ -13,9 +13,8 @@
 		<property name="severity" value="info" />
 	</module>
 
-	<module name="Translation" />
-
 	<module name="FileLength" />
+	<module name="Translation" />
 
 	<module name="TreeWalker">
 
@@ -137,17 +136,29 @@
 			<property name="classes" value="java.lang.Long,java.lang.Integer,java.lang.Float,java.lang.Double,java.lang.Boolean" />
 		</module>
 
+		<module name="MagicNumber" />
+		<module name="StringLiteralEquality" />
+
+		<module name="NestedForDepth">
+			<property name="max" value="3" />
+		</module>
+		<module name="NestedIfDepth">
+			<property name="max" value="3" />
+		</module>
+		<module name="NestedTryDepth">
+			<property name="max" value="3" />
+		</module>
+
+		<module name="IllegalCatch" />
+		<module name="IllegalThrows" />
+		<module name="PackageDeclaration" />
+		<module name="ParameterAssignment" />
+		<module name="UnnecessaryParentheses" />
+		<module name="OneStatementPerLine" />
+
+		<module name="FileContentsHolder" />
 	</module>
 
-	<module name="SuppressionCommentFilter">
-		<property name="offCommentFormat" value="CHECKSTYLE\:\s*OFF\s*" />
-		<property name="onCommentFormat" value="CHECKSTYLE\:\s*ON\s*" />
-	</module>
-
-	<module name="SuppressionCommentFilter">
-		<property name="offCommentFormat" value="CSOFF\:\s*(\S+)\s*" />
-		<property name="onCommentFormat" value="CSON\:\s*(\S+)\s*" />
-		<property name="checkFormat" value="$1" />
-	</module>
+	<module name="SuppressionCommentFilter" />
 
 </module>
