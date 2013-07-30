@@ -3,7 +3,7 @@
 	<groupId>net.bolbat</groupId>
 	<artifactId>bb-buildutils</artifactId>
 	<name>Build utilities</name>
-	<version>3</version>
+	<version>4-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<description>Utility for maven building process, like configurations, etc</description>
 	<url>http://confluence.infra.bolbat.net/</url>
@@ -245,7 +245,7 @@
 		<connection>scm:git:ssh://git@stash.infra.bolbat.net:9074/BBBUILDUTILS/main.git</connection>
 		<developerConnection>scm:git:ssh://git@stash.infra.bolbat.net:9074/BBBUILDUTILS/main.git</developerConnection>
 		<url>http://stash.infra.bolbat.net/scm/BBBUILDUTILS/main.git</url>
-		<tag>bb-buildutils-3</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 </project>
