@@ -61,24 +61,27 @@
 		<maven.compiler.target>1.7</maven.compiler.target>
 
 		<!-- plugin dependencies versions -->
-		<maven-release-plugin.version>2.4.1</maven-release-plugin.version>
-		<maven-jar-plugin.version>2.4</maven-jar-plugin.version>
-		<maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
-		<maven-surefire-plugin.version>2.15</maven-surefire-plugin.version>
-		<maven-project-info-reports-plugin.version>2.7</maven-project-info-reports-plugin.version>
-		<maven-jxr-plugin.version>2.3</maven-jxr-plugin.version>
-		<maven-pmd-plugin.version>3.0.1</maven-pmd-plugin.version>
-		<maven-checkstyle-plugin.version>2.10</maven-checkstyle-plugin.version>
-		<maven-javadoc-plugin.version>2.9.1</maven-javadoc-plugin.version>
-		<maven-gpg-plugin.version>1.4</maven-gpg-plugin.version>
-		<maven-source-plugin.version>2.2.1</maven-source-plugin.version>
-		<cobertura-maven-plugin.version>2.5.2</cobertura-maven-plugin.version>
-		<findbugs-maven-plugin.version>2.5.2</findbugs-maven-plugin.version>
+		<maven-release-plugin.version>2.5.3</maven-release-plugin.version>
+		<maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
+		<maven-jar-plugin.version>2.6</maven-jar-plugin.version>
+		<maven-source-plugin.version>2.4</maven-source-plugin.version>
+		<maven-javadoc-plugin.version>2.10.3</maven-javadoc-plugin.version>
+		<maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
+		<maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
+		<maven-project-info-reports-plugin.version>2.8.1</maven-project-info-reports-plugin.version>
+		<maven-jxr-plugin.version>2.5</maven-jxr-plugin.version>
+		<maven-pmd-plugin.version>3.6</maven-pmd-plugin.version>
+		<maven-checkstyle-plugin.version>2.17</maven-checkstyle-plugin.version>
+		<maven-javadoc-plugin.version>2.10.3</maven-javadoc-plugin.version>
+		<maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
+		<maven-source-plugin.version>2.4</maven-source-plugin.version>
+		<cobertura-maven-plugin.version>2.7</cobertura-maven-plugin.version>
+		<findbugs-maven-plugin.version>3.0.3</findbugs-maven-plugin.version>
 		<apt-maven-plugin.version>1.0-alpha-5</apt-maven-plugin.version>
 	</properties>
 
 	<build>
-		<finalName>${artifactId}-${version}</finalName>
+		<finalName>${project.artifactId}-${project.version}</finalName>
 		<resources>
 			<resource>
 				<directory>${project.basedir}/conf</directory>
@@ -102,8 +105,23 @@
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-deploy-plugin</artifactId>
+					<version>${maven-deploy-plugin.version}</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-jar-plugin</artifactId>
 					<version>${maven-jar-plugin.version}</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-source-plugin</artifactId>
+					<version>${maven-source-plugin.version}</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-javadoc-plugin</artifactId>
+					<version>${maven-javadoc-plugin.version}</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
