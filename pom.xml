@@ -12,7 +12,7 @@
 	<parent>
 		<groupId>org.sonatype.oss</groupId>
 		<artifactId>oss-parent</artifactId>
-		<version>7</version>
+		<version>9</version>
 	</parent>
 
 	<organization>
@@ -72,16 +72,6 @@
 	</properties>
 
 	<build>
-		<finalName>${project.artifactId}-${project.version}</finalName>
-		<resources>
-			<resource>
-				<directory>${project.basedir}/conf</directory>
-				<includes>
-					<include>**/*.xml</include>
-				</includes>
-			</resource>
-		</resources>
-
 		<pluginManagement>
 			<plugins>
 				<plugin>
@@ -204,18 +194,17 @@
 	<distributionManagement>
 		<!-- use the following if you ARE using a snapshot version. -->
 		<snapshotRepository>
-			<id>bb-snapshot</id>
-			<name>BB Snapshot Repository</name>
-			<url>https://nexus.infra.bolbat.net/content/repositories/snapshots</url>
+			<id>solutionary-snapshot</id>
+			<name>Snapshot Repository</name>
+			<url>https://nexus.solutionary.tech/content/repositories/snapshots</url>
 			<uniqueVersion>true</uniqueVersion>
 		</snapshotRepository>
 	</distributionManagement>
 
 	<scm>
-		<connection>scm:git:ssh://git@bitbucket.infra.bolbat.net:9074/BBBUILDUTILS/main.git</connection>
-		<developerConnection>scm:git:ssh://git@bitbucket.infra.bolbat.net:9074/BBBUILDUTILS/main.git</developerConnection>
-		<url>http://bitbucket.infra.bolbat.net/scm/BBBUILDUTILS/main.git</url>
-		<tag>HEAD</tag>
+		<connection>scm:git:ssh://git@code.solutionary.tech:9074/bb/bb-buildutils.git</connection>
+		<developerConnection>scm:git:ssh://git@code.solutionary.tech:9074/bb/bb-buildutils.git</developerConnection>
+		<url>https://code.solutionary.tech/projects/BB/repos/bb-buildutils/browse</url>
 	</scm>
 
 </project>
