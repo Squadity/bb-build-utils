@@ -7,7 +7,7 @@
 	<version>6-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<description>Utility for maven building process, like configurations, etc</description>
-	<url>http://confluence.infra.bolbat.net/</url>
+	<url>https://confluence.solutionary.tech</url>
 	<inceptionYear>2013</inceptionYear>
 
 	<parent>
@@ -17,36 +17,36 @@
 	</parent>
 
 	<organization>
-		<name>BB Corp</name>
-		<url>http://bolbat.net/</url>
+		<name>Solutionary</name>
+		<url>https://solutionary.tech</url>
 	</organization>
 
 	<licenses>
 		<license>
 			<name>MIT License</name>
-			<url>http://www.opensource.org/licenses/mit-license.php</url>
+			<url>https://opensource.org/licenses/mit-license.php</url>
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
 
 	<issueManagement>
 		<system>JIRA</system>
-		<url>http://jira.infra.bolbat.net</url>
+		<url>https://jira.solutionary.tech</url>
 	</issueManagement>
 
 	<ciManagement>
 		<system>Jenkins</system>
-		<url>http://jenkins.infra.bolbat.net</url>
+		<url>https://jenkins.solutionary.tech</url>
 	</ciManagement>
 
 	<developers>
 		<developer>
-			<id>bb-team</id>
-			<name>BB Team</name>
-			<email>info@bolbat.net</email>
-			<organization>bolbat.net</organization>
-			<organizationUrl>http://bolbat.net</organizationUrl>
-			<url>http://bolbat.net</url>
+			<id>solutionary-team</id>
+			<name>Solutionary Team</name>
+			<email>info@solutionary.tech</email>
+			<organization>solutionary.tech</organization>
+			<organizationUrl>https://solutionary.tech</organizationUrl>
+			<url>https://solutionary.tech</url>
 			<roles>
 				<role>Everything</role>
 			</roles>
