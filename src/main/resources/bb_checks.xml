@@ -19,9 +19,6 @@
 	<module name="TreeWalker">
 
 		<module name="JavadocMethod">
-			<property name="allowMissingParamTags" value="true" />
-			<property name="allowMissingThrowsTags" value="true" />
-			<property name="allowMissingReturnTag" value="false" />
 			<property name="severity" value="warning" />
 			<property name="scope" value="protected" />
 		</module>
